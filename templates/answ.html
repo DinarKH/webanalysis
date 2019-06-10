@@ -1,0 +1,19 @@
+{% extends 'input.html' %}
+{% block text %}
+
+    <div class="container">
+            <div id="login-row" class="row">
+                <div id="login-column" class="col-md-10">
+                    <h3 class="text-left text-info">Текст</h3>
+                    <h5>{{ header }}</h5>
+                    {% for el in text %}
+                        <p>{{ el }}</p>
+                    {% endfor %}
+                    <h3 class="text-left text-info">Сентимен</h3>
+                    <p>Полученая тональность: {{ sentiment }}</p>
+                </div>
+
+            </div>
+    </div>
+
+{% endblock %}
