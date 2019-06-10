@@ -1,5 +1,5 @@
 from django.shortcuts import render, HttpResponse
-from . import forms, parse, text_cleaner
+from . import forms, parse
 
 
 def inputRequest(request):
